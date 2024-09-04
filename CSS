@@ -1,0 +1,160 @@
+.recuadro {
+    background-color: lightgray;
+    width: vw;
+    height: vh;
+}
+.b1 {
+    text-align: center;
+    background-color: #4B4B4B;
+    width: vw;
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.cuadro{
+    border: 2px solid black;
+    background-color: white;
+    padding: 2px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.propiedad {
+    color: black;
+    border-bottom: 3px solid black;
+    font-family: sans-serif;
+}
+.textop {
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-align: justify;
+}
+.frase {
+    color:lightgray;
+    border-left: 3px solid #4B4B4B;
+    background-color: gray;
+    text-indent: 2%;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.box1 {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px;
+}
+.textocaja {
+    text-align: center;
+    text-indent: 5%;
+    font-weight: 500;
+}
+.box2 {
+    background-color: orangered;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+.textore{
+    text-indent:3px;
+}
+.textoab{
+    color:white;
+}
+.relativa{
+    background-color:lightblue;
+    position:relative;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    bottom:10px;
+    right: 1px;
+    padding: 10px;
+    }
+.absoluta{
+    background-color:green;
+    position:absolute ;
+    top:50px;
+    right: 0.5px;
+}
+.elementos{
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px;
+    background-color: palevioletred;
+}
+.containerGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.cuadrado{
+    background-color: red;
+    height: 250px;
+    width: 250px;
+    transition: 2s ease-in-out;
+    margin-bottom: 20px;
+}
+.cuadrado:hover{
+    cursor: pointer;
+    background-color: purple;
+}
+.animacion{
+    background-color: blue;
+    height: 250px;
+    width: 250px;
+    border-radius: 1000px;
+animation: mover 1s infinite alternate;
+}
+@keyframes mover{
+    0% {
+        transform:translateX(0);
+    }
+    100% {
+        transform:translateX(300px);
+    }
+}
+@media screen and (max-width:750px) {
+    .recuadro {
+        background-color: purple;
+    }
+    .b1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .cuadro {
+        width: 100%;
+        padding: 4px;
+        border-radius: 15px;
+    }
+    .relativa{
+        width: 100%;
+        padding: 1px;
+        margin-bottom: 50px;
+        margin-left: 1px;
+    }
+    .frase{
+        padding-bottom: 1px;
+        border-radius: 5px;
+    }
+    @keyframes mover{
+    0% {
+        transform:translateX(0);
+        }
+    100% {
+        transform:translateX(100%);
+        }
+    }
+    .cuadrado:hover{
+    background-color: yellow;
+    }
+}
